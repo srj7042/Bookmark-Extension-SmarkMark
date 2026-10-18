@@ -6,7 +6,7 @@ title: Privacy Policy
 
 **Last updated:** 2026-10-18
 **Applies to:** the SmartMark Chrome extension and this website.
-**Who we are:** Suraj Jaiswal, {{SELLER_ADDRESS}} — learnhowme987@gmail.com
+**Who we are:** Suraj Jaiswal, Pune, India — learnhowme987@gmail.com
 
 ## The short version
 
@@ -108,4 +108,4 @@ order: the paperwork follows the code, never the other way round.
 
 ## Contact
 
-Suraj Jaiswal, {{SELLER_ADDRESS}} — learnhowme987@gmail.com
+Suraj Jaiswal, Pune, India — learnhowme987@gmail.com

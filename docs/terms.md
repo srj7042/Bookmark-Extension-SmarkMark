@@ -7,7 +7,7 @@ title: Terms of Use
 **Last updated:** 2026-10-18
 
 These terms are an agreement between you and Suraj Jaiswal ("we", "us"), of
-{{SELLER_ADDRESS}}, the developer of the SmartMark Chrome extension ("SmartMark"). By
+Pune, India, the developer of the SmartMark Chrome extension ("SmartMark"). By
 installing or using SmartMark, you accept them. If you do not accept them, uninstall it —
 it takes one click and leaves nothing behind.
 
@@ -108,7 +108,7 @@ or discontinue it, at any time. Sections 3, 6, 7, 11 and 13 survive termination.
 
 ## 13. Governing law and jurisdiction
 
-These terms are governed by the laws of India, and the courts at {{JURISDICTION}} have
+These terms are governed by the laws of India, and the courts at Mumbai, India have
 exclusive jurisdiction — except that if you are a consumer resident elsewhere, you keep
 the protection of the mandatory consumer laws of your country of residence.
 
@@ -119,7 +119,7 @@ Ethics Code) Rules, 2021 and the Consumer Protection (E-Commerce) Rules, 2020:
 
 **Grievance officer:** Suraj Jaiswal
 **Email:** learnhowme987@gmail.com
-**Address:** {{SELLER_ADDRESS}}
+**Address:** Pune, India
 
 We aim to acknowledge a complaint within 48 hours and resolve it within 15 days.
 
@@ -138,4 +138,4 @@ assign it in connection with a transfer of the product.
 
 ## 17. Contact
 
-Suraj Jaiswal, {{SELLER_ADDRESS}} — learnhowme987@gmail.com
+Suraj Jaiswal, Pune, India — learnhowme987@gmail.com

@@ -2,6 +2,7 @@
   "name": "smartmark",
   "private": true,
   "version": "1.0.0",
+  "author": "Suraj Jaiswal",
   "description": "SmartMark - intelligent, local-first bookmark manager for Chrome (Manifest V3)",
   "type": "module",
   "scripts": {
