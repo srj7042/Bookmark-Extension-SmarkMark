@@ -1,0 +1,137 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (`document.documentElement.classList.toggle('dark')`). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --sm-bg: #f2efe7; /* warm ivory */
+  --sm-surface: #ffffff;
+  --sm-surface-2: #faf8f2;
+  --sm-surface-3: #ffffff;
+  --sm-line: #e4dfd2;
+  --sm-text: #1b2733;
+  /* AA-checked against --sm-bg, --sm-surface and --sm-surface-2 (5.2:1 / 6.0:1 / 5.6:1).
+     The previous #6d7b87 measured 3.8:1 on ivory and failed WCAG AA for small text.
+     `npm run guard` recomputes these ratios and fails if they drop. */
+  --sm-muted: #59656f;
+  --sm-sidebar: #3368a0;
+  --sm-sidebar-hover: #2b5a8c;
+  --sm-sidebar-text: #eaf1f7;
+  /* AA-checked against --sm-sidebar (4.6:1). The previous #a9c4da measured 3.2:1. */
+  --sm-sidebar-muted: #d9e7f2;
+  /* Focus ring: 7.1:1 on white, 6.2:1 on ivory. The sky accent #66a3bf measured
+     2.8:1, below the 3:1 that WCAG 1.4.11 asks of a focus indicator. */
+  --sm-focus: #2b5a8c;
+  --sm-focus-on-sidebar: #ffffff; /* 5.8:1 on --sm-sidebar */
+}
+
+.dark {
+  --sm-bg: #101519;
+  --sm-surface: #191f26;
+  --sm-surface-2: #14191f;
+  --sm-surface-3: #1f262e;
+  --sm-line: #2c3540;
+  --sm-text: #e9eef2;
+  --sm-muted: #93a2ae;
+  --sm-sidebar: #274d75;
+  --sm-sidebar-hover: #2f5d8c;
+  --sm-sidebar-text: #eaf1f7;
+  --sm-sidebar-muted: #a9c4da;
+  --sm-focus: #7fb3d5; /* 7.4:1 on --sm-surface; the sidebar uses --sm-focus-on-sidebar */
+  --sm-focus-on-sidebar: #ffffff; /* 8.7:1 on the dark sidebar */
+}
+
+@theme inline {
+  --color-ivory: #f2efe7;
+  --color-brand: #3368a0;
+  --color-brand-dark: #2b5a8c;
+  --color-sky: #66a3bf;
+  --color-sage: #c8dfdb;
+  --color-sage-deep: #4e8a83;
+
+  --color-bg: var(--sm-bg);
+  --color-surface: var(--sm-surface);
+  --color-surface2: var(--sm-surface-2);
+  --color-surface3: var(--sm-surface-3);
+  --color-line: var(--sm-line);
+  --color-ink: var(--sm-text);
+  --color-muted: var(--sm-muted);
+  --color-sidebar: var(--sm-sidebar);
+  --color-sidebar-hover: var(--sm-sidebar-hover);
+  --color-sidebar-text: var(--sm-sidebar-text);
+  --color-sidebar-muted: var(--sm-sidebar-muted);
+
+  --radius-xl2: 0.875rem;
+  --shadow-card: 0 1px 2px rgb(16 24 32 / 0.05), 0 10px 30px -18px rgb(16 24 32 / 0.35);
+  --shadow-pop: 0 8px 40px -12px rgb(16 24 32 / 0.35);
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--sm-bg);
+  color: var(--sm-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-synthesis-weight: none;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklab, var(--sm-muted) 45%, transparent) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--sm-muted) 40%, transparent);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: content-box;
+}
+
+:focus-visible {
+  outline: 2px solid var(--sm-focus);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* The sidebar is a mid-blue surface, so it needs its own contrasting ring. */
+[data-surface='sidebar'] :focus-visible,
+[data-surface='sidebar']:focus-visible {
+  outline-color: var(--sm-focus-on-sidebar);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes sm-rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.sm-rise {
+  animation: sm-rise 0.18s ease-out both;
+}

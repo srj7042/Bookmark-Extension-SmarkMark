@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "SmartMark – Smart Bookmark Manager",
+  "version": "1.0.0",
+  "description": "Local-first bookmark intelligence: auto-categories, tags, notes, search, duplicates, collections, undo. No account, no server.",
+  "minimum_chrome_version": "116",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SmartMark",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "permissions": ["bookmarks", "storage", "activeTab", "favicon"],
+  "commands": {
+    "save-current-page": {
+      "suggested_key": { "default": "Ctrl+Shift+S", "mac": "Command+Shift+S" },
+      "description": "Save the current page to SmartMark"
+    },
+    "open-dashboard": {
+      "suggested_key": { "default": "Ctrl+Shift+E", "mac": "Command+Shift+E" },
+      "description": "Open the SmartMark dashboard"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

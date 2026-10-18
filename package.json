@@ -1,0 +1,40 @@
+{
+  "name": "smartmark",
+  "private": true,
+  "version": "1.0.0",
+  "description": "SmartMark - intelligent, local-first bookmark manager for Chrome (Manifest V3)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run typecheck && npm run icons && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "node --test src/lib/logic.test.ts",
+    "smoke": "node scripts/smoke.mjs dist --headed",
+    "probe": "node scripts/probe.mjs",
+    "icons": "node scripts/gen-icons.mjs",
+    "pack": "npm run build && cd dist && zip -qr ../smartmark.zip . && cd .. && echo 'built smartmark.zip'",
+    "guard": "node scripts/guard.mjs",
+    "verify": "npm run typecheck && npm run lint && npm run test && npm run build && npm run guard && npm run probe"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/chrome": "^0.1.31",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "eslint": "^9.39.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^16.5.0",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2",
+    "vite": "^7.1.12"
+  }
+}

@@ -1,0 +1,39 @@
+SmartMark — local-first bookmark management for Chrome
+Copyright (C) 2026 Suraj Jaiswal. All rights reserved.
+
+This repository, and the extension built from it, are proprietary software.
+"Proprietary" means you may use the extension, but you may not take the code and
+ship it as your own — nothing here is open source.
+
+1. PERMITTED
+   - Install and use the official SmartMark extension, free of charge, on the
+     devices linked to your own Chrome profile.
+   - Read this source code, and build it for your own private, non-commercial use.
+   - Report bugs and send patches. Contributions are welcome and, if accepted,
+     are licensed to Suraj Jaiswal under these same terms.
+
+2. NOT PERMITTED without prior written permission
+   - Redistributing, republishing, sublicensing, selling, renting or bundling
+     SmartMark, or publishing it (or a modified copy) in any browser extension
+     store or app marketplace.
+   - Removing or altering copyright, licence or attribution notices.
+   - Using the SmartMark name or logo in a way that suggests endorsement or
+     affiliation.
+   - Reverse engineering, decompiling or disassembling, except to the extent that
+     applicable law expressly permits despite this restriction.
+
+3. THIRD-PARTY COMPONENTS
+   The extension bundles third-party libraries under their own licences. Those
+   licences continue to apply to those components. See THIRD_PARTY.md, which also
+   contains the notices that must travel with the build.
+
+4. NO WARRANTY
+   The software is provided "as is", without warranty of any kind. See
+   docs/terms.md, which governs your use of the extension and limits liability.
+
+5. FUTURE LICENSING
+   A later release may ship under a different licence (for example, an open-source
+   one). The licence distributed with a given release governs that release only.
+
+6. CONTACT
+   Licensing questions, including commercial or white-label use: {{CONTACT_EMAIL}}
