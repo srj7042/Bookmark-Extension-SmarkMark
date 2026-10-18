@@ -3,12 +3,12 @@ import type { Bookmark, Collection, Density, Settings, SortKey } from '../lib/ty
 import { applyQuery, categoryCounts, isUnorganized, tagVocabulary } from '../lib/query.ts'
 import type { Library, Toast } from '../lib/hooks.ts'
 import { useSelection } from '../lib/hooks.ts'
-import { openUrl } from '../lib/bookmarks.ts'
+import { openUrl, create } from '../lib/bookmarks.ts'
 import { CATEGORIES } from '../lib/categorize.ts'
 import { SearchBar } from '../components/SearchBar.tsx'
 import { BookmarkItem } from '../components/BookmarkItem.tsx'
 import { BulkBar } from '../components/BulkBar.tsx'
-import { CollectionModal, EditBookmarkModal, MoveModal, TagModal } from '../components/BookmarkDialogs.tsx'
+import { CollectionModal, EditBookmarkModal, MoveModal, NewFolderModal, TagModal } from '../components/BookmarkDialogs.tsx'
 import { Button, ConfirmDialog, EmptyState, ErrorState, IconButton, SkeletonRows, Select, Chip, cx } from '../components/ui.tsx'
 
 export type Scope = {
@@ -73,6 +73,7 @@ export function Browser({
   const [tagTarget, setTagTarget] = useState<Bookmark[] | null>(null)
   const [collectTarget, setCollectTarget] = useState<Bookmark[] | null>(null)
   const [deleteTarget, setDeleteTarget] = useState<Bookmark[] | null>(null)
+  const [creatingFolder, setCreatingFolder] = useState(false)
 
   // The dashboard remounts this view per route (`key`), so scope changes arrive as fresh state.
 
@@ -146,6 +147,15 @@ export function Browser({
     [moveBookmarks, folders, undoToast],
   )
 
+  const doCreateFolder = useCallback(
+    async (parentId: string, title: string) => {
+      await create({ parentId, title })
+      await reload()
+      push('Folder created.', 'success')
+    },
+    [reload, push],
+  )
+
   const doDelete = useCallback(
     async (ids: string[]) => {
       const undo = await deleteBookmarks(ids)
@@ -212,7 +222,10 @@ export function Browser({
             {subtitle ?? `${bookmarks.length} bookmarks in your library`}
           </p>
         </div>
-        {headerExtra}
+        <div className="flex items-end gap-2">
+          <Button onClick={() => setCreatingFolder(true)}>New folder</Button>
+          {headerExtra}
+        </div>
       </header>
 
       <SearchBar value={q} onChange={setQ} resultCount={visible.length} totalCount={base.length} />
@@ -401,6 +414,16 @@ export function Browser({
         onSave={async (name, existingId) => {
           const ids = collectTarget?.map((b) => b.id) ?? []
           if (ids.length) await doCollect(ids, name, existingId)
+        }}
+      />
+
+      <NewFolderModal
+        open={creatingFolder}
+        folders={folders}
+        onClose={() => setCreatingFolder(false)}
+        onCreate={async (parentId, title) => {
+          await doCreateFolder(parentId, title)
+          setCreatingFolder(false)
         }}
       />
 

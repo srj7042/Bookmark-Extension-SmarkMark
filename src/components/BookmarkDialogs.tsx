@@ -373,3 +373,57 @@ export function CollectionModal({
     </Modal>
   )
 }
+
+/** Create a real Chrome bookmarks folder under a chosen parent folder. */
+export function NewFolderModal({
+  open,
+  folders,
+  onClose,
+  onCreate,
+}: {
+  open: boolean
+  folders: Folder[]
+  onClose: () => void
+  onCreate: (parentId: string, title: string) => Promise<void>
+}) {
+  const [name, setName] = useState('')
+  const [parentId, setParentId] = useState('2')
+  const [busy, setBusy] = useState(false)
+  return (
+    <Modal
+      open={open}
+      title="Create new folder"
+      onClose={onClose}
+      width={460}
+      footer={
+        <>
+          <Button onClick={onClose}>Cancel</Button>
+          <Button
+            variant="primary"
+            disabled={busy || !name.trim()}
+            onClick={async () => {
+              setBusy(true)
+              await onCreate(parentId, name.trim())
+              setBusy(false)
+              setName('')
+              onClose()
+            }}
+          >
+            {busy ? 'Creating…' : 'Create folder'}
+          </Button>
+        </>
+      }
+    >
+      <div className="space-y-4">
+        <label className="block">
+          <span className="mb-1.5 block text-xs font-semibold text-muted uppercase">Folder name</span>
+          <Input value={name} onChange={(e) => setName(e.target.value)} autoFocus placeholder="e.g. Design" />
+        </label>
+        <label className="block">
+          <span className="mb-1.5 block text-xs font-semibold text-muted uppercase">Parent folder</span>
+          <FolderSelect folders={folders} value={parentId} onChange={setParentId} includeTopLevel={true} className="w-full" />
+        </label>
+      </div>
+    </Modal>
+  )
+}
