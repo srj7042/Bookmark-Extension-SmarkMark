@@ -32,7 +32,6 @@ Built with React 19 + TypeScript + Vite + Tailwind CSS v4.
 ## Install & build
 
 ```bash
-cd "/Users/surajjaiswal/Extensions/Extensions Bookmark"
 npm install
 npm run build          # typecheck -> icons -> vite build  (outputs dist/)
 ```
