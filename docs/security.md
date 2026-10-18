@@ -6,9 +6,9 @@ title: Security Policy
 
 ## Supported versions
 
-The latest published version (currently **1.x**) receives security fixes. Older builds are
-not supported once Chrome's Manifest V3 requirements move on. Always run the version the
-Chrome Web Store serves.
+**v1.0.0** (the current release) receives security fixes. Older builds are not supported
+once Chrome's Manifest V3 requirements move on. Always run the version the Chrome Web
+Store serves.
 
 ## Reporting a vulnerability
 

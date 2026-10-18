@@ -1,6 +1,6 @@
 # SmartMark
 
-A production-quality, **local-first** Chrome bookmark manager (Manifest V3). SmartMark reads your real
+**v1.0.0** — A production-quality, **local-first** Chrome bookmark manager (Manifest V3). SmartMark reads your real
 Chrome bookmarks through `chrome.bookmarks`, adds tags, notes, favorites, collections and automatic
 categorization on top, and never sends a byte of your data anywhere.
 

@@ -4,6 +4,8 @@ title: Accessibility
 
 # Accessibility
 
+**Covered release: v1.0.0**
+
 ## What we aim for
 
 SmartMark targets **WCAG 2.2 level AA** for its own interface — the toolbar popup, the

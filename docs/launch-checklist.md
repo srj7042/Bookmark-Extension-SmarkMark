@@ -34,7 +34,7 @@ published, maintained Chrome Web Store item. Items that only **you** can do are 
 - [ ] Run the manual checklist: `TEST_PLAN.md` §1–53, including the two reported
       regressions (category/tag route filtering and dashboard scrolling) and the
       accessibility steps 39–46.
-- [ ] Log issues in GitHub Issues; fix, re-run `npm run verify`, freeze `1.0.0`.
+- [ ] Log issues in GitHub Issues; fix, re-run `npm run verify`, freeze `v1.0.0`.
 - [ ] Tag the release (`git tag v1.0.0`) and write the changelog entry — `CHANGELOG.md`
       follows Keep a Changelog already.
 

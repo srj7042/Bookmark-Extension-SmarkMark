@@ -13,6 +13,7 @@ match what the code actually does. Every claim here is enforced by a check in
 | Field | Value | Limit |
 | --- | --- | --- |
 | Name | `SmartMark — Bookmark Manager` | 45 characters (measured: 30) |
+| Version | `v1.0.0` | — |
 | Short description | see below | 132 characters |
 | Category | Productivity | — |
 | Language | English | — |
