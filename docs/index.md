@@ -20,7 +20,7 @@ repository:
   automatically (`npm run probe`/`npm run guard`), and known limitations.
 
 If anything here contradicts what the extension actually does, that is a bug — report it
-to {{CONTACT_EMAIL}}.
+to learnhowme987@gmail.com.
 
 ## How to load SmartMark (developer)
 

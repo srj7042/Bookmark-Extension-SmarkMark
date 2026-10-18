@@ -12,7 +12,7 @@ Chrome Web Store serves.
 
 ## Reporting a vulnerability
 
-Email **{{SECURITY_EMAIL}}** with:
+Email **learnhowme987@gmail.com** with:
 
 - the SmartMark version (from `chrome://extensions`) and your Chrome version and OS;
 - what you did, what you expected, and what happened;
@@ -103,4 +103,4 @@ categorise, search, import, export, delete. The request list stays empty.
 
 ## Contact
 
-{{SECURITY_EMAIL}}
+learnhowme987@gmail.com

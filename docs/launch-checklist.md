@@ -17,10 +17,10 @@ published, maintained Chrome Web Store item. Items that only **you** can do are 
       items here cover the rest):
   | File | Placeholder | What to put |
   | --- | --- | --- |
-  | `docs/privacy.md`, `terms.md`, `security.md`, `accessibility.md` | `{{SELLER_NAME}}`, `{{SELLER_ADDRESS}}`, `{{CONTACT_EMAIL}}`, `{{EFFECTIVE_DATE}}`, `{{JURISDICTION}}` | your name, an address (city is enough to start), the support email, today's date, your city/courts |
-  | `docs/privacy.md` | `{{EMAIL_PROVIDER}}` | Gmail, Fastmail, your own domain… whoever hosts support@ |
-  | `docs/terms.md` | `{{GRIEVANCE_NAME}}` | your name (grievance officer, required by Indian e-commerce rules) |
-  | `docs/security.md` | `{{SECURITY_EMAIL}}` | security contact (can be the same support email) |
+  | `docs/privacy.md`, `terms.md`, `security.md`, `accessibility.md` | `Suraj Jaiswal`, `{{SELLER_ADDRESS}}`, `learnhowme987@gmail.com`, `2026-10-18`, `{{JURISDICTION}}` | your name, an address (city is enough to start), the support email, today's date, your city/courts |
+  | `docs/privacy.md` | `Gmail` | Gmail, Fastmail, your own domain… whoever hosts support@ |
+  | `docs/terms.md` | `Suraj Jaiswal` | your name (grievance officer, required by Indian e-commerce rules) |
+  | `docs/security.md` | `learnhowme987@gmail.com` | security contact (can be the same support email) |
   | `docs/store-listing.md` | `{{SUPPORT_URL}}`, `{{PRIVACY_URL}}` | live URLs once the policies are hosted |
 - [ ] Decide where the policies live before you submit: GitHub Pages serves `docs/` in
       minutes for free — see Phase 2.

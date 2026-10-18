@@ -73,7 +73,7 @@ not useful:
 
 ## Reporting an accessibility problem
 
-Email {{CONTACT_EMAIL}} with the page, what you used (keyboard, screen reader, zoom,
+Email learnhowme987@gmail.com with the page, what you used (keyboard, screen reader, zoom,
 theme) and what happened. Accessibility bugs are treated as bugs, not as feature requests.
 
 ## Legal context (informational)

@@ -4,9 +4,9 @@ title: Privacy Policy
 
 # SmartMark Privacy Policy
 
-**Last updated:** {{EFFECTIVE_DATE}}
+**Last updated:** 2026-10-18
 **Applies to:** the SmartMark Chrome extension and this website.
-**Who we are:** {{SELLER_NAME}}, {{SELLER_ADDRESS}} — {{CONTACT_EMAIL}}
+**Who we are:** Suraj Jaiswal, {{SELLER_ADDRESS}} — learnhowme987@gmail.com
 
 ## The short version
 
@@ -70,7 +70,7 @@ anything you attach. That is the only personal data SmartMark's developer can ev
   interest in supporting the people who use the extension.
 - **Retention:** deleted within 24 months of the last reply, or immediately if you ask.
 - **Sharing:** never sold, never used for advertising, never used for credit or insurance
-  decisions. Email is hosted by {{EMAIL_PROVIDER}}, acting as a processor.
+  decisions. Email is hosted by Gmail, acting as a processor.
 
 ## Your rights
 
@@ -85,7 +85,7 @@ design — see *Storage, retention and deletion* above.
   defined by those laws, and holds no personal information to disclose or delete.
 
 To exercise any right, or simply to ask a question about this policy, write to
-{{CONTACT_EMAIL}}. You will get an answer within 30 days.
+learnhowme987@gmail.com. You will get an answer within 30 days.
 
 ## Children
 
@@ -108,4 +108,4 @@ order: the paperwork follows the code, never the other way round.
 
 ## Contact
 
-{{SELLER_NAME}}, {{SELLER_ADDRESS}} — {{CONTACT_EMAIL}}
+Suraj Jaiswal, {{SELLER_ADDRESS}} — learnhowme987@gmail.com

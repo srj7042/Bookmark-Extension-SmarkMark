@@ -4,9 +4,9 @@ title: Terms of Use
 
 # SmartMark Terms of Use
 
-**Last updated:** {{EFFECTIVE_DATE}}
+**Last updated:** 2026-10-18
 
-These terms are an agreement between you and {{SELLER_NAME}} ("we", "us"), of
+These terms are an agreement between you and Suraj Jaiswal ("we", "us"), of
 {{SELLER_ADDRESS}}, the developer of the SmartMark Chrome extension ("SmartMark"). By
 installing or using SmartMark, you accept them. If you do not accept them, uninstall it —
 it takes one click and leaves nothing behind.
@@ -42,7 +42,7 @@ through your Google account — that relationship is between you and Google, not
 
 ## 4. Support
 
-Support is provided on a best-effort basis at {{CONTACT_EMAIL}}. There is no service-level
+Support is provided on a best-effort basis at learnhowme987@gmail.com. There is no service-level
 agreement: no guaranteed response time, no guaranteed fix, and we may decline a change
 that does not fit the product. We answer support email as described in the
 [Privacy Policy](privacy.html).
@@ -117,8 +117,8 @@ the protection of the mandatory consumer laws of your country of residence.
 As required by the Information Technology (Intermediary Guidelines and Digital Media
 Ethics Code) Rules, 2021 and the Consumer Protection (E-Commerce) Rules, 2020:
 
-**Grievance officer:** {{GRIEVANCE_NAME}}
-**Email:** {{CONTACT_EMAIL}}
+**Grievance officer:** Suraj Jaiswal
+**Email:** learnhowme987@gmail.com
 **Address:** {{SELLER_ADDRESS}}
 
 We aim to acknowledge a complaint within 48 hours and resolve it within 15 days.
@@ -138,4 +138,4 @@ assign it in connection with a transfer of the product.
 
 ## 17. Contact
 
-{{SELLER_NAME}}, {{SELLER_ADDRESS}} — {{CONTACT_EMAIL}}
+Suraj Jaiswal, {{SELLER_ADDRESS}} — learnhowme987@gmail.com
