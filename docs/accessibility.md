@@ -4,7 +4,7 @@ title: Accessibility
 
 # Accessibility
 
-**Covered release: v1.0.0**
+**Covered release: v1.1.0**
 
 ## What we aim for
 

@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "SmartMark – Smart Bookmark Manager",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Local-first bookmark intelligence: auto-categories, tags, notes, search, duplicates, collections, undo. No account, no server.",
   "minimum_chrome_version": "116",
   "action": {

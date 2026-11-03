@@ -24,7 +24,7 @@ ship it as your own — nothing here is open source.
 
 3. THIRD-PARTY COMPONENTS
    The extension bundles third-party libraries under their own licences. Those
-   licences continue to apply to those components. See THIRD_PARTY.md, which also
+   licences continue to apply to those components. See docs/THIRD_PARTY.md, which also
    contains the notices that must travel with the build.
 
 4. NO WARRANTY

@@ -3,7 +3,11 @@
 All notable changes to SmartMark are recorded here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: [SemVer](https://semver.org/).
 
-## [Unreleased]
+## [1.1.0] — 2026-11-03
+
+### Changed
+- Moved all documentation markdown files (`ARCHITECTURE.md`, `CHANGELOG.md`, `TEST_PLAN.md`, `THIRD_PARTY.md`) into `docs/` directory.
+- Updated documentation links and references across README, LICENSE, and docs.
 
 ### Added
 - `docs/` — privacy policy, terms, security policy, accessibility statement, data map,
@@ -12,13 +16,6 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: [S
   permission, a remote asset or a broken contrast token pair appears (`npm run guard`).
 - Accessibility checks in `scripts/probe.mjs`: WCAG AA contrast in light and dark,
   accessible names, form labels, placeholder contrast, and focus-ring visibility.
-
-### Changed
-- `--sm-muted` darkened and `--sm-sidebar-muted` lightened (light theme) to meet WCAG AA:
-  muted text measured 3.8:1 on ivory before. Dark theme values already passed.
-- Focus ring is now `--sm-focus` instead of the sky accent, and switches to white inside
-  the blue sidebar: the previous ring measured 2.8:1 on white, below the 3:1 minimum for
-  a focus indicator (WCAG 1.4.11).
 
 ### Fixed
 - Clicking a category card (or a tag) listed the **whole library** instead of that

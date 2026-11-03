@@ -99,7 +99,7 @@ Expected substrings: `SmartMark`, `All bookmarks`, `Categories`, `Something went
 
 ## 3. Manual checklist
 
-Load `dist/` unpacked (see [README](./README.md#load-the-unpacked-extension-exact-steps)), then walk
+Load `dist/` unpacked (see [README](../README.md#load-the-unpacked-extension-exact-steps)), then walk
 these. `⟳` means reload the extension card first if you just rebuilt.
 
 ### Install & surface

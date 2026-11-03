@@ -1,6 +1,6 @@
 # SmartMark
 
-**v1.0.0** — A production-quality, **local-first** Chrome bookmark manager (Manifest V3). SmartMark reads your real
+**v1.1.0** — A production-quality, **local-first** Chrome bookmark manager (Manifest V3). SmartMark reads your real
 Chrome bookmarks through `chrome.bookmarks`, adds tags, notes, favorites, collections and automatic
 categorization on top, and never sends a byte of your data anywhere.
 
@@ -45,7 +45,7 @@ npm run lint       # eslint .
 npm test           # logic self-check (node:test, no framework)
 npm run verify     # typecheck + lint + test + build + probe
 npm run probe      # headless layout/route check of the built pages (no Chrome profile needed)
-npm run smoke      # automated end-to-end check (see TEST_PLAN.md for the Chrome caveat)
+npm run smoke      # automated end-to-end check (see docs/TEST_PLAN.md for the Chrome caveat)
 npm run pack       # build + smartmark.zip for the Chrome Web Store
 ```
 
@@ -95,7 +95,7 @@ pick up changes. If the toolbar popup seems stale, close and reopen it.
 No `host_permissions`, no content scripts, no remote code, no analytics, no network calls of any kind.
 The MV3 CSP is locked to `script-src 'self'; object-src 'self'`.
 
-See [ARCHITECTURE.md](./ARCHITECTURE.md) for the module map and [TEST_PLAN.md](./TEST_PLAN.md) for how
+See [ARCHITECTURE.md](docs/ARCHITECTURE.md) for the module map and [TEST_PLAN.md](docs/TEST_PLAN.md) for how
 each claim above is verified.
 
 ---
@@ -126,7 +126,7 @@ data (`chrome://extensions` → SmartMark → Remove).
 ## License
 
 SmartMark is proprietary software — free to install and use, but not open source:
-see `LICENSE` for the end-user licence and `THIRD_PARTY.md` for the React notices
+see `LICENSE` for the end-user licence and `docs/THIRD_PARTY.md` for the React notices
 (which keep their own MIT licence). A later release may ship under a different
 licence; the licence shipped with a release governs that release.
 
