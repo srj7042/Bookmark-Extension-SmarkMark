@@ -123,6 +123,10 @@ SmartMark has no backend. Categorization runs in the page, metadata lives in `ch
 and imports/exports are read and written by your browser locally. Uninstalling removes all SmartMark
 data (`chrome://extensions` → SmartMark → Remove).
 
+## Author
+
+Created and maintained by **[Suraj Jaiswal](https://github.com/srj7042)**.
+
 ## License
 
 SmartMark is proprietary software — free to install and use, but not open source:

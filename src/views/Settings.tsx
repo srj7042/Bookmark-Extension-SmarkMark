@@ -223,6 +223,18 @@ export function SettingsView({
             </p>
           </Card>
         </div>
+
+        <div>
+          <SectionTitle>About</SectionTitle>
+          <Card className="space-y-1.5 p-4 text-sm text-muted">
+            <p>
+              <strong className="text-ink">SmartMark v1.1.0</strong> — Local-first bookmark manager
+            </p>
+            <p>
+              Created by <span className="font-medium text-ink">Suraj Jaiswal</span>
+            </p>
+          </Card>
+        </div>
       </div>
     </section>
   )
