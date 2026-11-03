@@ -9,7 +9,6 @@ confirm.
 ## 1. Automated — run these first
 
 ```bash
-cd "/Users/surajjaiswal/Extensions/Extensions Bookmark"
 npm run verify     # typecheck + lint + test + build
 ```
 

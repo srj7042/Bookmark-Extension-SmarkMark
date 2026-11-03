@@ -29,50 +29,55 @@ Built with React 19 + TypeScript + Vite + Tailwind CSS v4.
 
 ---
 
-## Install & build
+## 🚀 Quick Start (One-Command Setup)
+
+For developers, contributors, or friends running the extension from source:
 
 ```bash
-npm install
-npm run build          # typecheck -> icons -> vite build  (outputs dist/)
+git clone https://github.com/srj7042/Bookmark-Extension-SmarkMark.git && cd Bookmark-Extension-SmarkMark && ./setup.sh
 ```
 
-Other scripts:
+Or if you have already cloned the repository:
 
 ```bash
+./setup.sh
+# or: npm run setup
+```
+
+This installs all dependencies, runs typechecks, generates icons, and builds the extension into `dist/`.
+
+---
+
+## Load into Chrome (in 30 seconds)
+
+1. Open Google Chrome and go to **`chrome://extensions`**.
+2. Turn on **Developer mode** (toggle in the top-right corner).
+3. Click **Load unpacked**.
+4. Select the **`dist`** folder inside the project directory (not the repository root).
+5. SmartMark appears in your extensions list, and the dashboard opens automatically on first install!
+6. **Pin it:** click the puzzle-piece icon in the Chrome toolbar → click the pin next to **SmartMark**.
+
+After any code change, press the **reload** (↻) button on the SmartMark card in `chrome://extensions` to
+pick up changes.
+
+### Available npm scripts:
+
+```bash
+npm run setup      # one-command install + build
 npm run dev        # Vite dev server (UI only; chrome.* APIs need the real extension)
+npm run build      # typecheck -> icons -> vite build (outputs dist/)
 npm run typecheck  # tsc --noEmit
 npm run lint       # eslint .
 npm test           # logic self-check (node:test, no framework)
 npm run verify     # typecheck + lint + test + build + probe
-npm run probe      # headless layout/route check of the built pages (no Chrome profile needed)
-npm run smoke      # automated end-to-end check (see docs/TEST_PLAN.md for the Chrome caveat)
-npm run pack       # build + smartmark.zip for the Chrome Web Store
+npm run probe      # headless layout/route check of the built pages
+npm run smoke      # automated end-to-end check (see docs/TEST_PLAN.md)
+npm run pack       # build + smartmark.zip for Chrome Web Store
 ```
-
-Regenerating icons happens automatically in `npm run build` (`node scripts/gen-icons.mjs`, zero
-dependencies — a hand-rolled PNG encoder over `node:zlib`).
 
 ---
 
-## Load the unpacked extension (exact steps)
-
-1. Run `npm run build`. Confirm `dist/` contains `manifest.json`, `background.js`, `popup.html`,
-   `dashboard.html`, `options.html` and `icons/`.
-2. Open Chrome and go to **`chrome://extensions`**.
-3. Turn on **Developer mode** (top-right toggle).
-4. Click **Load unpacked**.
-5. Select the **`dist`** folder — i.e. `/Users/surajjaiswal/Extensions/Extensions Bookmark/dist`
-   (not the repository root, which has no `manifest.json`).
-6. SmartMark appears in the list and the dashboard opens automatically on first install.
-7. Pin it: click the puzzle-piece icon in the toolbar → the pin next to **SmartMark**.
-
-After a rebuild, press the **reload** (↻) button on the SmartMark card in `chrome://extensions` to
-pick up changes. If the toolbar popup seems stale, close and reopen it.
-
-**Shortcuts:** click **Keyboard shortcuts** on the SmartMark card in `chrome://extensions`, or go to
-`chrome://extensions/shortcuts`, to rebind them.
-
-### Load errors?
+## Load errors?
 
 | Symptom | Fix |
 | --- | --- |
